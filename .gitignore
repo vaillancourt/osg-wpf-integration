@@ -382,3 +382,7 @@ MigrationBackup/
 *.exe
 *.out
 *.app
+
+# Project specific:
+intermediate
+output

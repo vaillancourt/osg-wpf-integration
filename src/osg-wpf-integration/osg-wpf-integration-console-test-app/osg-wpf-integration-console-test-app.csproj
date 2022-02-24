@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>osg_wpf_integration_console_test_app</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x86</PlatformTarget>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <BaseIntermediateOutputPath>..\..\..\intermediate\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <BaseOutputPath>..\..\..\output\$(MSBuildProjectName)\</BaseOutputPath>
+    <Platforms>x86;x64</Platforms>
+  </PropertyGroup>
+
+</Project>

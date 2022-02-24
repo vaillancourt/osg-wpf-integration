@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "osg-wpf-integration-console-test-app": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
