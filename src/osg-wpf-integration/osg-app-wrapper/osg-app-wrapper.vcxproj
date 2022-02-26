@@ -98,16 +98,22 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\DevTools\OpenSceneGraph-3.6.5\installv143\x86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <AssemblyDebug>true</AssemblyDebug>
+      <AdditionalLibraryDirectories>C:\DevTools\OpenSceneGraph-3.6.5\installv143\x86\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>osgd.lib;osgViewerd.lib;osgDBd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>xcopy /IY $(SolutionDir)..\..\output\$(ProjectName)_$(Platform)_$(Configuration)\*.dll $(SolutionDir)..\..\output\osg-wpf-integration-console-test-app\x86\$(Configuration)
-xcopy /IY $(SolutionDir)..\..\output\$(ProjectName)_$(Platform)_$(Configuration)\*.pdb $(SolutionDir)..\..\output\osg-wpf-integration-console-test-app\x86\$(Configuration)</Command>
+xcopy /IY $(SolutionDir)..\..\output\$(ProjectName)_$(Platform)_$(Configuration)\*.pdb $(SolutionDir)..\..\output\osg-wpf-integration-console-test-app\x86\$(Configuration)
+xcopy /IY $(SolutionDir)..\..\output\$(ProjectName)_$(Platform)_$(Configuration)\*.dll $(SolutionDir)..\..\output\wpf-app\x86\$(Configuration)
+xcopy /IY $(SolutionDir)..\..\output\$(ProjectName)_$(Platform)_$(Configuration)\*.pdb $(SolutionDir)..\..\output\wpf-app\x86\$(Configuration)
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -120,6 +126,7 @@ xcopy /IY $(SolutionDir)..\..\output\$(ProjectName)_$(Platform)_$(Configuration)
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\DevTools\OpenSceneGraph-3.6.5\installv143\x86\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -128,10 +135,14 @@ xcopy /IY $(SolutionDir)..\..\output\$(ProjectName)_$(Platform)_$(Configuration)
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <AssemblyDebug>true</AssemblyDebug>
+      <AdditionalLibraryDirectories>C:\DevTools\OpenSceneGraph-3.6.5\installv143\x86\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>xcopy /IY $(SolutionDir)..\..\output\$(ProjectName)_$(Platform)_$(Configuration)\*.dll $(SolutionDir)..\..\output\osg-wpf-integration-console-test-app\x86\$(Configuration)
-xcopy /IY $(SolutionDir)..\..\output\$(ProjectName)_$(Platform)_$(Configuration)\*.pdb $(SolutionDir)..\..\output\osg-wpf-integration-console-test-app\x86\$(Configuration)</Command>
+xcopy /IY $(SolutionDir)..\..\output\$(ProjectName)_$(Platform)_$(Configuration)\*.pdb $(SolutionDir)..\..\output\osg-wpf-integration-console-test-app\x86\$(Configuration)
+xcopy /IY $(SolutionDir)..\..\output\$(ProjectName)_$(Platform)_$(Configuration)\*.dll $(SolutionDir)..\..\output\wpf-app\x86\$(Configuration)
+xcopy /IY $(SolutionDir)..\..\output\$(ProjectName)_$(Platform)_$(Configuration)\*.pdb $(SolutionDir)..\..\output\wpf-app\x86\$(Configuration)
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

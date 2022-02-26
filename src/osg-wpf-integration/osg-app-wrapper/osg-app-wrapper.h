@@ -7,6 +7,11 @@
 #define OSGAPPWRAPPER_API __declspec(dllimport)
 #endif
 
+
+extern "C" OSGAPPWRAPPER_API void osgWpf_Init(HWND aHandle);
+extern "C" OSGAPPWRAPPER_API void osgWpf_ShutDown();
+extern "C" OSGAPPWRAPPER_API void osgWpf_Frame();
+
 // The Fibonacci recurrence relation describes a sequence F
 // where F(n) is { n = 0, a
 //               { n = 1, b
