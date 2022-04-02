@@ -2,16 +2,17 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows10.0.20348.0</TargetFramework>
     <RootNamespace>wpf_app</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-    <BaseIntermediateOutputPath>..\..\..\intermediate\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
-    <BaseOutputPath>..\..\..\output\$(MSBuildProjectName)\</BaseOutputPath>
-    <Platforms>AnyCPU;x86</Platforms>
+    <BaseIntermediateOutputPath>..\..\..\intermediate\$(MSBuildProjectName)</BaseIntermediateOutputPath>
+    <BaseOutputPath>..\..\..\output\$(MSBuildProjectName)</BaseOutputPath>
+    <Platforms>AnyCPU;x86;x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>

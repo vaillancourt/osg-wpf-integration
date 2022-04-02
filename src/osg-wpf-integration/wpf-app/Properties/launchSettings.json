@@ -2,6 +2,9 @@
   "profiles": {
     "wpf-app": {
       "commandName": "Project",
+      "environmentVariables": {
+        "PATH": "%PATH%;C:\\DevTools\\OpenSceneGraph-3.6.5\\installv143\\x64\\bin"
+      },
       "hotReloadEnabled": false,
       "nativeDebugging": true
     }
